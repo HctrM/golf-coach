@@ -23,52 +23,68 @@
 		<div id="content-page">
 			<div id="holeCount">Trou 1</div>
 			<div id="text"><img src="img/menu_icon.svg" id="menuButton"></img>Golf Coach</div>
-			<div id="next">➜</div> 	
-			
+			<div id="next"><p id="arrow">➜</p></div> 	
 			<div id="panels">
 				<div id="keypad">
-					<div class="key">1</div>
-					<div class="key">2</div>
-					<div class="key">3</div>
-					<div class="key">4</div>
-					<div class="key">5</div>
-					<div class="key">6</div>
-					<div class="key">7</div>
-					<div class="key">8</div>
-					<div class="key">9</div>	
+					<div class="ask">Combien de coups?</div>
+					<div id="keys">
+						<div class="key">1</div>
+						<div class="key">2</div>
+						<div class="key">3</div>
+						<div class="key">4</div>
+						<div class="key">5</div>
+						<div class="key">6</div>
+						<div class="key">7</div>
+						<div class="key">8</div>
+						<div class="key">9</div>	
+					</div>
 				</div>
 				
 				<div id="girfir">
-					<div class="quest">
-						Green en régulation ?
-					</div>
-					<div class="ans" id="gir">
-						<img src="img/thumbUp.png" class="imgUp" id="girup"></img>
-						<img src="img/thumbUpR.png" class="imgDown" id="girdown"></img>
-					</div>
-					<div class="quest">
-						Fairway en régulation ?
-					</div>
+					<div class="ask">Fairway touché?</div>
 					<div class="ans" id="fir">
 						<img src="img/thumbUp.png" class="imgUp" id="firup"></img>
 						<img src="img/thumbUpR.png" class="imgDown" id="firdown"></img>
 					</div>
+					<div class="ask">Green en régulation?</div>
+					<div class="ans" id="gir">
+						<img src="img/thumbUp.png" class="imgUp" id="girup"></img>
+						<img src="img/thumbUpR.png" class="imgDown" id="girdown"></img>
+					</div>
+					
 				</div>
 				
 				<div id="putt">
-					<div class="puttKey">1</div>
-					<div class="puttKey">2</div>
-					<div class="puttKey">3</div>
-					<div class="puttKey">4</div>
+					<div class="ask"> Combien de putts tu as fait? </div>
+					<div id="puttKeys">
+						<div class="puttKey">1</div>
+						<div class="puttKey">2</div>
+						<div class="puttKey">3</div>
+						<div class="puttKey">4</div>
+					</div>
 				</div>
 
 				<div id="results">
+					<button class="ui-button ui-widget ui-corner-all" id="front">Front 9</button>
+					<button class="ui-button ui-widget ui-corner-all" id="back">Back 9</button>
 					<table id="scorecard">
 					</table>
-					<button class="ui-button ui-widget ui-corner-all">Sauvegarder</button>
+					<div id="stat-review">
+						<div class="stat" id="firPercent"></div>
+						<div class="stat" id="girPercent"></div>
+						<div class="stat" id="threePutt"></div>
+						<div class="stat" id="score"></div>
+					</div>
+					<button class="ui-button ui-widget ui-corner-all" id="save">Sauvegarder</button>
+				</div>
+
+				<div id="facts">Le saviez-vous? <br><p id="knowledge"></p></div>
+
+				<div id="history">
+					<ul>
+					</ul>
 				</div>
 			</div>		
-<!--        <img src="img/back.png" alt="back" id="next"> -->
 		</div>
     </body>
 </html>
